@@ -14,17 +14,21 @@ Execute the command: `InfMaxV1.0.exe [options]`
 
 For example,
 
-- Format the graph: 
+- Format the graph with the WC setting: 
 
 	`InfMaxV1.0.exe -func=0 -gname=facebook`
 
-- Run OneHop algorithm to select 50 nodes:
+- Run OneHop algorithm to select 50 nodes under the IC model (diffusion probability is loaded directly from the file, which is the WC setting if the graph is formatted in the above procedure):
 
 	`InfMaxV1.0.exe -func=1 -gname=facebook -alg=oneHop -seedsize=50`
 
-- Run TwoHop algorithm to select 100 nodes:
+- Run TwoHop algorithm to select 100 nodes under the LT-WC model:
 
-	`InfMaxV1.0.exe -func=1 -gname=facebook -alg=twoHop -seedsize=100`
+	`InfMaxV1.0.exe -func=1 -gname=facebook -alg=twoHop -seedsize=100 -model=LT -pdist=WC`
+
+- Run TwoHop algorithm without using upper bounding approach to select 100 nodes under the IC-TRI model:
+
+	`InfMaxV1.0.exe -func=1 -gname=facebook -alg=twoHop -opt=0 -seedsize=100 -model=IC -pdist=TRI`
 
 ### Options
 - **-func=integer**
