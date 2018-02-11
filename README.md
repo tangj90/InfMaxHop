@@ -1,7 +1,7 @@
 # InfMaxHop
 This project implements the hop-based influence maximization algorithms for the following papers:
 
-- Jing Tang, Xueyan Tang, Junsong Yuan, "[An Efficient and Effective Hop-Based Approach for Influence Maximization in Social Networks,](https://link.springer.com/article/10.1007%2Fs13278-018-0489-y)" in Social Network Analysis and Mining, 2018.
+- Jing Tang, Xueyan Tang, Junsong Yuan, "[An Efficient and Effective Hop-Based Approach for Influence Maximization in Social Networks,](https://link.springer.com/article/10.1007%2Fs13278-018-0489-y)" in Social Network Analysis and Mining, vol. 8, no. 10, 2018.
 
 - Jing Tang, Xueyan Tang, Junsong Yuan, "[Influence Maximization Meets Efficiency and Effectiveness: A Hop-Based Approach,](https://dl.acm.org/citation.cfm?id=3110025.3110041)" in Proc. IEEE/ACM ASONAM, 2017, pp. 64–71.
 
