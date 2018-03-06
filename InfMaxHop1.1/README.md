@@ -17,8 +17,6 @@ Execute the command: `{your_exec} [options]`. `{your_exec}` may be `InfMaxHop1.1
 
 See some sample codes in **sample-code.sh** or **sample-code.bat**. For example,
 
-For example,
-
 - Format the graph with the WC setting: 
 
 	`{your_exec} -func=0 -gname=facebook`
