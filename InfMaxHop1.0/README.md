@@ -1,4 +1,4 @@
-# InfMaxHop version 1.1
+# InfMaxHop version 1.0
 This project implements the hop-based influence maximization algorithms for the following papers:
 
 - Jing Tang, Xueyan Tang, Junsong Yuan, "An Efficient and Effective Hop-Based Approach for Influence Maximization in Social Networks," in Social Network Analysis and Mining, 2018.
@@ -6,34 +6,29 @@ This project implements the hop-based influence maximization algorithms for the 
 - Jing Tang, Xueyan Tang, Junsong Yuan, "[Influence Maximization Meets Efficiency and Effectiveness: A Hop-Based Approach,](https://dl.acm.org/citation.cfm?id=3110025.3110041)" in Proc. IEEE/ACM ASONAM, 2017, pp. 64–71.
 
 **Author: Jing Tang (Nanyang Technological University)**
-> Cross-platform supported, including **\*nix** and **Windows** systems!\
-Under **\*nix** system, compile and build codes:\
-`g++ -std=c++14 -O3 -W3 InfMaxHop.cpp oneHop.cpp twoHop.cpp SFMT/dSFMT/dSFMT.c -o InfMaxHop1.1.o`\
-Note: `c++1x` is required.
+>Development platform: Windows Visual Studio 2017.
 
 **_Before running influence maximization algorithms, please format the graph first!_**
 
-Execute the command: `{your_exec} [options]`. `{your_exec}` may be `InfMaxHop1.1.o` under **\*nix** or `InfMaxHop1.1.exe` under **Windows**.
-
-See some sample codes in **sample-code.sh** or **sample-code.bat**. For example,
+Execute the command: `InfMaxHop1.0.exe [options]`
 
 For example,
 
 - Format the graph with the WC setting: 
 
-	`{your_exec} -func=0 -gname=facebook`
+	`InfMaxHop1.0.exe -func=0 -gname=facebook`
 
 - Run OneHop algorithm to select 50 nodes under the IC model (diffusion probability is loaded directly from the file, which is the WC setting if the graph is formatted in the above procedure):
 
-	`{your_exec} -func=1 -gname=facebook -alg=oneHop -seedsize=50`
+	`InfMaxHop1.0.exe -func=1 -gname=facebook -alg=oneHop -seedsize=50`
 
 - Run TwoHop algorithm to select 100 nodes under the LT-WC model:
 
-	`{your_exec} -func=1 -gname=facebook -alg=twoHop -seedsize=100 -model=LT -pdist=WC`
+	`InfMaxHop1.0.exe -func=1 -gname=facebook -alg=twoHop -seedsize=100 -model=LT -pdist=WC`
 
 - Run TwoHop algorithm without using upper bounding approach to select 100 nodes under the IC-TRI model:
 
-	`{your_exec} -func=1 -gname=facebook -alg=twoHop -opt=0 -seedsize=100 -model=IC -pdist=TRI`
+	`InfMaxHop1.0.exe -func=1 -gname=facebook -alg=twoHop -opt=0 -seedsize=100 -model=IC -pdist=TRI`
 
 ### Options
 - **-func=integer**

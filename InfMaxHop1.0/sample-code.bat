@@ -1,6 +1,6 @@
 REM Begin
 
-SET exec=InfMaxHop1.1.exe
+SET exec=InfMaxHop1.0.exe
 CALL %exec% -func=0 -gname=facebook
 PAUSE
 CALL %exec% -func=1 -gname=facebook -alg=oneHop -seedsize=50

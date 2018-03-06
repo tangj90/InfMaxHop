@@ -45,13 +45,13 @@
     <ClInclude Include="timer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\SFMT\dSFMT\dSFMT.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="oneHop.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="twoHop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SFMT\dSFMT\dSFMT.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -68,7 +68,7 @@
     <ClCompile Include="twoHop.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\SFMT\dSFMT\dSFMT.c">
+    <ClCompile Include="SFMT\dSFMT\dSFMT.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
